@@ -1,0 +1,12 @@
+{
+    "max-fetch-candle": 999,
+    "providers": ["coinex"],
+    "markets": [
+        "btcusdt"
+    ],
+    "intervals": [
+        "15min",
+        "30min",
+        "1hour"
+    ]
+}
