@@ -4,7 +4,7 @@ from src.helpers.data.coinex.url_fetcher import UrlFetcher
 
 class MarketDataFetcher:
     @staticmethod
-    def fetch(market: str, interval: int, past_candles: int) -> List[List[Any]]:
+    def fetch(market: str, interval: str, past_candles: int) -> List[List[Any]]:
         response = UrlFetcher('candle_data', market, interval, past_candles).fetch()
         try:
             response.raise_for_status()

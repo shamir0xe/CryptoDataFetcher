@@ -1,12 +1,12 @@
 {
     "max-fetch-candle": 999,
-    "providers": ["coinex"],
-    "markets": [
-        "btcusdt"
-    ],
+    "providers": ["kucoin"],
+    "base-markets": ["usdt", "btc"],
     "intervals": [
+        "5min",
         "15min",
         "30min",
-        "1hour"
+        "1hour",
+        "4hour"
     ]
 }

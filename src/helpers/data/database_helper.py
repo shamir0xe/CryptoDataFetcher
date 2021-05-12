@@ -5,7 +5,7 @@ from src.facades.database import CryptoDB
 
 class DatabaseHelper:
     @staticmethod
-    def find_one(obj: Dict, sort_obj: Optional[Dict]) -> Optional[Dict]:
+    def find_one(obj: Dict, sort_obj: Optional[Dict] = None) -> Optional[Dict]:
         candles = CryptoDB.db().candles
         cursor = candles.find(obj)
         if sort_obj is not None:
